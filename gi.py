@@ -7,7 +7,8 @@ def help():
     print(":::: does everything including creating repo and pushes ...")
     print(": side seq : (side)")
     print(":::: does pushing and commit and adds all the files ")
-    print(": :")
+    print(": bye or exit  :")
+    print(":::: well what do u think it does ... byee duhhhh ")
 
 def main():
     help()
@@ -49,7 +50,7 @@ def main():
             help()
 
 
-        elif (val == "exit"):
+        elif (val == "exit" or val == "bye"):
             print("bye da ... ")
             break
 
