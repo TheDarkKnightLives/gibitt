@@ -10,6 +10,7 @@ def help():
     print(": :")
 
 def main():
+    help()
     while True:
         val = input(">>>")
         if (val == "main"):
@@ -26,7 +27,10 @@ def main():
             print("setting origin and pushing ")
             os.system("git branch -M main ")
             os.system("git push -u origin main ")
-            break 
+            inpt = input("wanna continue or nah (type yay or nay ):")
+            if (inpt == "nay"):
+                print("bye pangu ")
+                break 
 
         elif (val == "side"):
             print("adding files ... \n commiting ... ")
@@ -35,11 +39,20 @@ def main():
             os.system(f"git commit -m {commit}")
             print("pushing ... ")
             os.system("git push -u origin main ")
-            break 
+            inpt = input("wanna continue or nah (type yay or nay ):")
+            if (inpt == "nay"):
+                print("bye pangu ")
+                break 
+
+        elif (val == "help"):
+            print("haha noob ...")
+            help()
+
 
         elif (val == "exit"):
             print("bye da ... ")
-            break 
+            break
+
         else :
             print("thappu thambi ... ")
 
